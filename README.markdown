@@ -31,11 +31,11 @@
 
 ## Executive Summary
 
-[CoinTrade](https://cointrade.ai) is a pioneering AI-powered trading platform that empowers users to create, manage, and monetize sophisticated cryptocurrency trading strategies. By integrating a Retrieval-Augmented Generation (RAG) model with the [Haystack framework](https://haystack.deepset.ai/), [Weaviate vector databases](https://weaviate.io/), and [OpenRouter.ai](https://openrouter.ai/)’s advanced language models, CoinTrade delivers intelligent, data-driven trading decisions. Its React-based frontend, enhanced with [Tailwind CSS](https://tailwindcss.com/) and [Chart.js](https://www.chartjs.org/), offers robust portfolio tracking, trading agent management, a comprehensive metrics suite, and a unique AI chat interface for real-time interaction with trading agents. This whitepaper provides an overview of CoinTrade’s architecture, features, trading strategy, security, and future enhancements, serving as both a technical showcase for investors and auditors and a user guide for optimizing the platform’s capabilities.
+[CoinTrade](#) is a pioneering AI-powered trading platform that empowers users to create, manage, and monetize sophisticated cryptocurrency trading strategies. By integrating a Retrieval-Augmented Generation (RAG) model with the [Haystack framework](https://haystack.deepset.ai/), [Weaviate vector databases](https://weaviate.io/), and [OpenRouter.ai](https://openrouter.ai/)’s advanced language models, CoinTrade delivers intelligent, data-driven trading decisions. Its React-based frontend, enhanced with [Tailwind CSS](https://tailwindcss.com/) and [Chart.js](https://www.chartjs.org/), offers robust portfolio tracking, trading agent management, a comprehensive metrics suite, and a unique AI chat interface for real-time interaction with trading agents. This whitepaper provides an overview of CoinTrade’s architecture, features, trading strategy, security, and future enhancements, serving as both a technical showcase for investors and auditors and a user guide for optimizing the platform’s capabilities.
 
 ## Introduction
 
-[CoinTrade](https://cointrade.ai) transforms algorithmic trading by combining artificial intelligence with real-time market insights, enabling users to automate trading on [Binance](https://www.binance.com/)’s spot and futures markets. The platform supports a community-driven marketplace for sharing and monetizing trading agents and offers an AI chat interface for strategy insights, modifications, and portfolio automation. Powered by three specialized vector databases for market data, trading signals, and sentiment analysis, CoinTrade ensures precision and accessibility. This document outlines the platform’s technical architecture, detailed frontend features, trading strategy, security measures, and future roadmap, guiding users to maximize their trading potential.
+[CoinTrade](#) transforms algorithmic trading by combining artificial intelligence with real-time market insights, enabling users to automate trading on [Binance](https://www.binance.com/)’s spot and futures markets. The platform supports a community-driven marketplace for sharing and monetizing trading agents and offers an AI chat interface for strategy insights, modifications, and portfolio automation. Powered by three specialized vector databases for market data, trading signals, and sentiment analysis, CoinTrade ensures precision and accessibility. This document outlines the platform’s technical architecture, detailed frontend features, trading strategy, security measures, and future roadmap, guiding users to maximize their trading potential.
 
 ### Key Objectives
 
@@ -116,13 +116,6 @@ CoinTrade’s portfolio tracking tools provide a comprehensive view of trading a
 - **Live Account Balance Tracking**: Updates balances in real-time using [Binance WebSocket](https://www.binance.com/en/binance-api) streams for accurate monitoring during volatile markets.
 - **Historical Performance Trends**: Tracks portfolio growth over customizable timeframes (1D, 1W, 1M, 1Y) via [Chart.js](https://www.chartjs.org/) line graphs.
 
-**How to Use**:
-
-- Navigate to the “Portfolio” section from the sidebar.
-- Review real-time balance and P&L on the dashboard.
-- Use rebalancing tools to adjust allocations based on AI-driven suggestions.
-- Set alerts for significant portfolio changes (e.g., 5% drawdown).
-
 ### Trading Agent Management
 
 CoinTrade’s agent management system allows users to create and control AI-driven trading agents, leveraging the RAG model for strategy generation.
@@ -137,13 +130,6 @@ CoinTrade’s agent management system allows users to create and control AI-driv
 - **Real-Time Performance Tracking**: Monitors agent activity, including active trades, win rate, and P&L, with [Chart.js](https://www.chartjs.org/) visualizations (e.g., candlestick charts for trade entries/exits).
 - **Control Features**: Start, stop, or pause agents with one click; adjust parameters mid-trade based on market conditions.
 
-**How to Use**:
-
-- Access the “Agents” section to launch the creation wizard.
-- Define strategy parameters and deploy the agent.
-- Monitor performance via the dashboard’s agent status cards.
-- Adjust settings as needed based on performance or market changes.
-
 ### AI Chat Interface
 
 CoinTrade’s AI chat interface, powered by the RAG model and [OpenRouter.ai](https://openrouter.ai/)’s LLaMA 3.1 70B, allows users to interact directly with trading agents to gain insights, modify strategies, manage positions, and automate portfolio rebalancing.
@@ -153,14 +139,6 @@ CoinTrade’s AI chat interface, powered by the RAG model and [OpenRouter.ai](ht
 - **Position Management**: Open or close positions directly (e.g., “Open a 0.1 BTC long position at market price” or “Close all ETH/USDT positions”). Commands are executed via [Binance APIs](https://www.binance.com/en/binance-api) with confirmation prompts.
 - **Automated Portfolio Rebalancing**: Configure rebalancing strategies by specifying target allocations (e.g., “Rebalance to 50% BTC, 30% ETH, 20% USDT monthly”). The AI executes rebalancing based on predefined rules or market conditions.
 - **Interactive Guidance**: Receive optimization suggestions (e.g., “Increase position size to 2% for higher volatility pairs”) and market updates (e.g., “Positive sentiment detected for BTC from recent [X](https://x.com/) posts”).
-
-**How to Use**:
-
-- Access the “Chat” section from the sidebar to open the AI chat interface.
-- Ask questions about agent strategies or market conditions (e.g., “Explain the current BTC/USDT trade”).
-- Issue commands to modify strategies, open/close positions, or set rebalancing rules.
-- Review AI responses and confirm actions via confirmation prompts.
-- Save frequently used commands as templates for quick access.
 
 ### Comprehensive Metrics Suite
 
@@ -175,13 +153,6 @@ CoinTrade’s analytics section provides a robust suite of metrics to evaluate a
 - **Historical Performance Metrics**: Analyzes past performance with customizable timeframes.
 - **Benchmarking**: Compares agent performance against market indices or top community agents.
 
-**How to Use**:
-
-- Navigate to the “Analytics” section to view detailed metrics.
-- Select timeframes and metrics to customize reports.
-- Use comparison tools to evaluate and optimize strategies.
-- Set alerts for key thresholds (e.g., 10% drawdown, 70% win rate).
-
 ### Agent Marketplace
 
 The marketplace enables users to buy, sell, and discover trading agents, fostering a community-driven ecosystem.
@@ -189,12 +160,6 @@ The marketplace enables users to buy, sell, and discover trading agents, fosteri
 - **Buying Agents**: Browse verified agents with detailed metrics (e.g., ROI, win rate). Purchase with USDT via Web3 wallets (e.g., [MetaMask](https://metamask.io/)) and clone to your account.
 - **Selling Agents**: List successful strategies, set pricing, and earn passive income with performance verification.
 - **Community Rankings**: View trending agents and user reviews to identify top performers.
-
-**How to Use**:
-
-- Access the “Marketplace” section to browse or list agents.
-- Review performance metrics and ratings before purchasing.
-- Connect a Web3 wallet to complete transactions securely.
 
 ### User Interface
 
@@ -204,12 +169,6 @@ CoinTrade’s frontend ensures ease of use and accessibility:
 - **Navigation Sidebar**: Organized sections for Overview, Getting Started, Features, Technical Architecture, User Guide, API Reference, Chat, and Troubleshooting.
 - **Mobile Support**: Fully responsive design for desktop and mobile access.
 - **Alerts and Notifications**: Customizable alerts for market events, agent performance, or portfolio thresholds.
-
-**How to Use**:
-
-- Use the sidebar to navigate between sections.
-- Customize dashboard views to prioritize key metrics or agents.
-- Access on mobile for real-time monitoring.
 
 ## Trading Strategy
 
@@ -299,13 +258,4 @@ CoinTrade is actively evolving, with plans to enhance its capabilities:
 
 ## Conclusion
 
-[CoinTrade](https://cointrade.ai) redefines algorithmic trading with its sophisticated RAG model, powered by [Haystack](https://haystack.deepset.ai/) and [Weaviate](https://weaviate.io/), a robust trading strategy, and an intuitive frontend. The AI chat interface, portfolio tracking, agent management, and metrics suite empower users to optimize their trading performance with ease. With strong security, compliance, and a forward-looking roadmap, CoinTrade is poised to lead the cryptocurrency trading industry.
-
-**Getting Started**:
-
-- Sign up at [CoinTrade](https://cointrade.ai) using Google authentication.
-- Connect your [Binance](https://www.binance.com/) account with API keys (testnet recommended for beginners).
-- Create and deploy your first trading agent using the wizard.
-- Use the AI chat interface to refine strategies and manage positions.
-- Monitor performance via the dashboard and analytics tools.
-- Explore the marketplace to discover or share strategies.
+[CoinTrade](#) redefines algorithmic trading with its sophisticated RAG model, powered by [Haystack](https://haystack.deepset.ai/) and [Weaviate](https://weaviate.io/), a robust trading strategy, and an intuitive frontend. The AI chat interface, portfolio tracking, agent management, and metrics suite empower users to optimize their trading performance with ease. With strong security, compliance, and a forward-looking roadmap, CoinTrade is poised to lead the cryptocurrency trading industry.
